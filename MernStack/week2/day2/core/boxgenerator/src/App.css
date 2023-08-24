@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+button{
+  margin: 10px;
+}
+.myform{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+}
