@@ -16,7 +16,7 @@ export const Box = (props) => {
             display:'inline-block',    
             height:'80px',
             width:'80px',
-            backgroundColor:theTable
+            backgroundColor:theTable 
             }}></div>
      } )
 

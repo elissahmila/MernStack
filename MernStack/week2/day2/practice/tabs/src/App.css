@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+form{
+  
+  justify-content: center;
+  margin: 10%
+}
+button{
+  margin: 5%;
+  height: 60px;
+  width: 20%;
+}
+p{
+  background-color: beige;
+  
+  height: 70px;
+  padding: 30px;
+  text-align: left;
+}
+
