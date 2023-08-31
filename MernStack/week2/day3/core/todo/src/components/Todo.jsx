@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 
 const Todo = () => {
   const [newTodo, setNewTodo] = useState('');
@@ -6,42 +7,37 @@ const Todo = () => {
 
   const handleNewTodoSubmit = (event) => {
     event.preventDefault();
-    if (newTodo.trim() === '') {
+    if (newTodo.length === 0) {
       return;
     }
-    const toDoItem = {
+    const TodoItem = {
       text: newTodo,
       complete: false,
     };
-    setTodos([...todos, toDoItem]);
+    setTodos([...todos, TodoItem]);
     setNewTodo('');
   };
 
   const handleTodoDelete = (delIdx) => {
-    const filterTodos = todos.filter((_, i) => {
-      return i !== delIdx;
-    });
-    setTodos(filterTodos);
+    const filteredTodos = todos.filter((todo, i) => i !== delIdx);
+    setTodos(filteredTodos);
   };
 
-  const handleTodoToggleComplete = (idx) => {
-    const updatedTodos = todos.map((todo, i) =>
-      i === idx ? { ...todo, complete: !todo.complete } : todo
-    );
+  const handleToggleComplete = (idx) => {
+    const updatedTodos = todos.map((todo, i) => {
+      if (i === idx) {
+        return { ...todo, complete: !todo.complete };
+      }
+      return todo;
+    });
     setTodos(updatedTodos);
   };
 
   return (
     <>
-      <form
-        onSubmit={(event) => {
-          handleNewTodoSubmit(event);
-        }}
-      >
+      <form onSubmit={(event) => handleNewTodoSubmit(event)}>
         <input
-          onChange={(event) => {
-            setNewTodo(event.target.value);
-          }}
+          onChange={(event) => setNewTodo(event.target.value)}
           type="text"
           value={newTodo}
         />
@@ -51,20 +47,20 @@ const Todo = () => {
       </form>
       <hr />
       {todos.map((todo, i) => {
+        const todoClasses = ['bold', 'italics'];
+        if (todo.complete) {
+          todoClasses.push('class1');
+        }
         return (
           <div key={i}>
             <input
-              type="checkbox"
+              onChange={() => handleToggleComplete(i)}
               checked={todo.complete}
-              onChange={() => handleTodoToggleComplete(i)}
+              type="checkbox"
             />
-            <span style={{ textDecoration: todo.complete ? 'line-through' : 'none' }}>
-              {todo.text}
-            </span>
+            <span className={todoClasses.join(' ')}>{todo.text}</span>
             <button
-              onClick={() => {
-                handleTodoDelete(i);
-              }}
+              onClick={() => handleTodoDelete(i)}
               style={{ marginLeft: '10px' }}
             >
               Delete
@@ -77,4 +73,3 @@ const Todo = () => {
 };
 
 export default Todo;
-
