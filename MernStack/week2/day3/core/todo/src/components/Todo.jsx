@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import "./style.css";
 
 const Todo = () => {
   const [newTodo, setNewTodo] = useState('');
@@ -42,7 +42,9 @@ const Todo = () => {
           value={newTodo}
         />
         <div>
-          <button>Add</button>
+          <button
+                    className='psps'
+                    >Add</button>
         </div>
       </form>
       <hr />
