@@ -1,0 +1,30 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add --exact react react-dom react-scripts cra-template --cwd C:\Users\dell\Desktop\MernStack\MernStack\week3\day1\core\my-app
+
+PATH: 
+  C:\Users\dell\AppData\Local\Temp\yarn--1693712157477-0.6581795133991317;C:\Users\dell\AppData\Local\Yarn\Data\global\node_modules\.bin;C:\Users\dell\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\dell\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\dell\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\dell\bin;C:\Python311\Scripts;C:\Python311;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dell\AppData\Local\GitHubDesktop\bin;C:\Users\dell\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: AC160000:error:1C800066:Provider routines:ossl_gcm_stream_update:cipher operation failed:c:\ws\deps\openssl\openssl\providers\implementations\ciphers\ciphercommon_gcm.c:320:
+
+npm manifest: 
+  {
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
