@@ -1,7 +1,7 @@
 const {Joke} = require("../models/joke.model")
  
 
-module.exports.findAlljokes = (req,res) => {
+module.exports.findAllJokes = (req,res) => {
     Joke.find()
     .then(allJoke =>{
         res.json({allJoke})
