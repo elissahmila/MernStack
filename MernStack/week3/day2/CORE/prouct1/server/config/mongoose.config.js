@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const DB = process.env.DB
-mongoose.connect('mongodb://127.0.0.1:27017/myDBb   ', {
+mongoose.connect(`mongodb://127.0.0.1:27017/${DB}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

@@ -1,4 +1,4 @@
-const ProductControllers = require("../controller/products.controller")
+const ProductControllers = require("../controller/product.controller")
 
 console.log(ProductControllers)
 

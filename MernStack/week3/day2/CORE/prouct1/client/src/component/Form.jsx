@@ -6,7 +6,6 @@ const Form = (props) => {
     const [ price, setPrice] = useState(0)
     const [descreption, setDescreption] = useState("")
     const { refresh } = props
-    
     const onSubmitHandler = (e) => {
         e.preventDefault()
         const newObj ={
