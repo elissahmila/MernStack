@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 
 const Dachbord = (props) => {
   const [allProduct, setAllProduct] = useState([]);
@@ -23,9 +22,9 @@ const Dachbord = (props) => {
       <hr />
       {allProduct.map((oneProduct) => (
         <div key={oneProduct._id}>
-          <br />
-          <br />
-          <Link to={`/MoreDetails/${oneProduct._id}`}>{oneProduct.productTitle}</Link><br /><br />
+          <p>{oneProduct.productTitle}</p>
+          <p>{oneProduct.price}</p>
+          <p>{oneProduct.description}</p> 
         </div>
       ))}
     </fieldset>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import Form from './Form';
-import Dachbord from './Dachbord';
+
+import Dachbord from '../component/Dachbord';
+import { Form } from 'react-router-dom';
+
 
 const Main = () => {
   const [refreshState, setRefreshState] = useState(false);

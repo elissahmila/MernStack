@@ -6,7 +6,7 @@ const Form = (props) => {
   const [price, setPrice] = useState(0);
   const [description, setDescription] = useState('');
 
-  const { refresh } = props;
+  const { refresh } = props
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
