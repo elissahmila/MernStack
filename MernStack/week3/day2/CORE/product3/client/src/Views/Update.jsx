@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams, Link } from 'react-router-dom'
 
 const Update = () => {
   const { id } = useParams()
@@ -51,6 +51,8 @@ const Update = () => {
         Description: <input onChange={(e) => { setDescription(e.target.value) }}  value={description}/>
         <button>update Product</button>
       </form>
+      <Link to={"/"}>home</Link>
+
     </div>
   )
 }

@@ -9,3 +9,4 @@ module.exports = (app) => {
     app.get("/api/product",ProductControllers.findOneProduct)
     app.delete("/api/product/:id",ProductControllers.deleteProduct)
 }
+
