@@ -1,0 +1,29 @@
+.user-png{
+    width: 30px;
+    height: 30px;
+}
+
+/* @keyframes site-name {
+    from{
+        color: rgb(255, 0, 0);
+    }
+    to{
+        color: rgb(150, 37, 37);
+    }
+    
+} */
+.navbar-brand{
+    margin-right: 53%;
+    margin-left: 8%;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+.navbar-brand:hover{
+        color:gray
+}
+.btn-nav{
+        background-color: rgb(255, 0, 0);
+        border-radius: 5px;
+        color: white;
+            font-weight: bold;
+}
